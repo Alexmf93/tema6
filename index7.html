@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <form action="mostrarArchivos.php" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="nombre">Introduzca su nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+        </div>
+        <div>
+            <label for="archivos">Seleccione sus archivos</label>
+            <input type="file" name="archivos" id="archivos" multiple >
+            <span>Puedes subir multiples archivos</span>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+    
+</body>
+</html>
+
+
+<!-- nombre de usuario, y archivos para subir -->

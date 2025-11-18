@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <style>
+        .div-form{
+            display: flex;
+            flex-direction: column;
+        }
+        span{
+            font-size: 0.8rem;
+            font-weight: 100;
+        }
+    </style>
+</head>
+<body>
+    <h1>Oferta de empleo</h1>
+    <form action="mostrarCv.php" method="post" enctype="multipart/form-data">
+        <div class="div-form">
+            <label for="nombre">Introduzca su nombre</label>
+            <input type="text" name="nombre" id="nombre" maxlength="20" required>
+        </div>
+        <div class="div-form">
+            <label for="dni">Introduzca su DNI</label>
+            <input type="text" name="dni" id="dni" maxlength="9" required>
+        </div>
+        <div class="div-form">
+            <label for="cv">Suba su cv por favor</label>
+            <input type="file" name="cv" id="cv" accept="application/pdf" required>
+            <span>Tipo de archivo permitido PDF</span>
+            <span>Tamaño máximo 2MB</span>
+        </div>
+        <button type="submit">Subir datos</button>
+    </form>
+</body>
+</html>
